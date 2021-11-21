@@ -14,7 +14,7 @@ NUM_LEDS = 50
 led_strip = plasma.WS2812(NUM_LEDS, 0, 0, plasma2040.DAT)
 
 # The speed that the LEDs will start cycling at
-DEFAULT_SPEED = 3
+DEFAULT_SPEED = 4
 
 # How many times the LEDs will be updated per second
 UPDATES = 60
@@ -67,10 +67,10 @@ while True:
         print(should_pulse)
     else:
         if a:
-            if speed is 20:
-                speed = 5
+            if speed > 20:
+                speed = 4
             else:
-                speed += 5
+                speed += 4
             print("Speed: ", speed)
         if b:
             if selected_color is COLOR_PINK:
